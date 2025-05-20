@@ -3,7 +3,7 @@ import FloatingTopBar from './components/FloatingTopBar';
 
 export default function Home() {
   return (
-    <main className="relative h-screen w-screen flex items-center justify-center overflow-hidden">
+    <main className="relative min-h-[calc(100vh_-_3.5rem)] w-full flex items-center justify-center overflow-hidden">
       <FloatingTopBar />
       <Image
         src="/images/main-background.png"

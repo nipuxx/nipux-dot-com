@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 export const metadata: Metadata = {
   title: 'Nipux',
@@ -16,7 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="flex flex-col min-h-screen bg-gray-900 text-gray-50">
+        <Navbar />
+        <div className="flex-1 pt-14">{children}</div>
+        <Footer />
+      </body>
     </html>
   );
 }
