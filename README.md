@@ -1,10 +1,10 @@
-# Next.js Framework Starter
+# Nipux Website
 
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/templates/tree/main/next-starter-template)
 
 <!-- dash-content-start -->
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It's deployed on Cloudflare Workers as a [static website](https://developers.cloudflare.com/workers/static-assets/).
+This project contains the source code for the Nipux website. It was bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and is deployed on Cloudflare Workers as a [static website](https://developers.cloudflare.com/workers/static-assets/).
 
 <!-- dash-content-end -->
 
@@ -14,7 +14,7 @@ Outside of this repo, you can start a new project with this template using [C3](
 npm create cloudflare@latest -- --template=cloudflare/templates/next-starter-template
 ```
 
-A live public deployment of this template is available at [https://next-starter-template.templates.workers.dev](https://next-starter-template.templates.workers.dev)
+The site includes a landing page with animated background, an About section and a simple contact form. You can see a live deployment at [https://nipux.com](https://nipux.com) once development is complete.
 
 ## Getting Started
 
@@ -38,7 +38,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the pages in the `app` directory. The home page is `app/page.tsx` and additional routes like `app/about/page.tsx` and `app/contact/page.tsx` can be customized.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
