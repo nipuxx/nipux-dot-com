@@ -35,13 +35,14 @@
   },
   "scripts": {
     "build": "next build",
-    "build:cf": "npm run build && opennextjs-cloudflare build",
+    "build:cloudflare": "opennextjs-cloudflare build",
+    "build:full": "npm run build && npm run build:cloudflare",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
-    "check": "npm run build:cf && tsc && wrangler deploy --dry-run",
-    "deploy": "npm run build:cf && wrangler deploy",
+    "check": "npm run build:full && tsc && wrangler deploy --dry-run",
+    "deploy": "npm run build:full && wrangler deploy",
     "dev": "next dev",
     "lint": "next lint",
-    "preview": "npm run build:cf && wrangler dev",
+    "preview": "npm run build:full && wrangler dev",
     "start": "next start"
   }
 }
