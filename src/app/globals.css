@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Minimal global styles */
 * {
   margin: 0;
   padding: 0;
@@ -17,8 +16,8 @@ body {
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: #111;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,16 +25,7 @@ body {
   text-align: center;
 }
 
-h1 {
-  font-size: 5rem;
-  font-weight: 900;
-  text-transform: lowercase;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-p {
-  color: #888;
-  font-size: 1.25rem;
-  margin-top: 1rem;
-  text-transform: lowercase;
+main {
+  font-size: 15px;
+  font-weight: 400;
 }
